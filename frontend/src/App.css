@@ -1,0 +1,239 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic page setup */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: linear-gradient(45deg, #fa2360e9, #f13235e9, #f64c14e9);
+  /* Optional: If you want to cover the entire page, set min-height to 100vh */
+  min-height: 100vh;
+}
+
+.profile-section {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 60px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.profile-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.job-title,
+.location {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.follow-btn,
+.message-btn {
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.follow-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.follow-btn:hover {
+  background-color: #0056b3;
+}
+
+.message-btn {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.message-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social-links li {
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.social-links i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.profile-right {
+  flex: 2;
+  min-width: 320px;
+}
+
+.personal-info .info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.personal-info .info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item span:first-child {
+  font-weight: bold;
+  color: #555;
+}
+
+.info-item span:last-child {
+  color: #777;
+}
+
+.project-status {
+  margin-top: 30px;
+}
+
+.project-item {
+  margin-bottom: 20px;
+}
+
+.project-item span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #28a745;
+  border-radius: 5px;
+}
+
+.project-item .progress-bar[style]::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .profile-left {
+    margin-bottom: 30px;
+  }
+
+  .profile-right {
+    flex: 1;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .follow-btn,
+  .message-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .social-links i {
+    font-size: 16px;
+  }
+
+  .project-item span {
+    font-size: 14px;
+  }
+}

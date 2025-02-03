@@ -1,0 +1,85 @@
+.login-popUp {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.56);
+    display: grid;
+  }
+  
+  .login-popUp-container {
+    place-self: center;
+    width: min(80vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+  }
+  
+  .login-popUp-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+  }
+  
+  .login-popUp-title span {
+    cursor: pointer;
+    font-size: 16px;
+    color: #f13235e9;
+  }
+  
+  .login-popUp-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .login-popUp-inputs input {
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+  }
+  
+  .login-popUp-container button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #f13235e9;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .login-popUp-terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: -15px;
+  }
+  
+  .login-popUp-terms input {
+    margin-top: 5px;
+  }
+  
+  p span {
+    color: #f13235e9;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

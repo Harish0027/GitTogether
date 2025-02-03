@@ -1,0 +1,241 @@
+/* Container for the entire profile card */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    background-color: #000108;
+    padding: 40px 0;
+  }
+  
+  /* Profile Card Styles */
+  .profile-card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    position: relative;
+    background: linear-gradient(135deg, #f64c14, #f13235, #fa2360);
+    padding: 30px 30px;
+    border-radius: 20px 20px 0 0;
+    color: white;
+  }
+  
+  /* Profile Info Container (Image and Name) */
+  .profile-info-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px; /* Add spacing below this container */
+  }
+  
+  /* Profile Image Container */
+  .profile-image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: white;
+    padding: 2px;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Profile Info (Name and Location) */
+  .profile-info {
+    text-align: left;
+  }
+  
+  .profile-name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .profile-location {
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Profile Button Container (Buttons below profile) */
+  .profile-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Profile Button Styles */
+  .profile-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .edit-profile, .message, .send-request {
+    background: none;
+    color: white;
+    border: 2px solid #f13235;
+  }
+  
+  .edit-profile:hover, .message:hover, .send-request:hover {
+    background-color: white;
+    color: #f13235;
+  }
+  
+  /* Profile Stats */
+  .profile-stats {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fafbfc;
+    padding: 25px 0;
+  }
+  
+  .stats {
+    text-align: center;
+  }
+  
+  .stats-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .stats-label {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  /* About Section */
+  .profile-about {
+    padding: 40px;
+    background-color: #fafbfc;
+  }
+  
+  .profile-about h5 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .about-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-item {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  /* Recent Photos */
+  .recent-photos {
+    padding: 30px;
+  }
+  
+  .photos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .show-all-link {
+    color: #f13235;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .show-all-link:hover {
+    text-decoration: underline;
+  }
+  
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .photo-item {
+    position: relative;
+  }
+  
+  .photo-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .photo-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .profile-header {
+      padding: 20px;
+    }
+  
+    .profile-info-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .profile-button-container {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .profile-image-container {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .profile-name {
+      font-size: 28px;
+    }
+  
+    .profile-location {
+      font-size: 16px;
+    }
+  
+    .stats-value {
+      font-size: 18px;
+    }
+  
+    .stats-label {
+      font-size: 12px;
+    }
+  
+    .about-item {
+      font-size: 12px;
+    }
+  
+    .photo-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+  }
+  

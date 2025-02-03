@@ -1,0 +1,315 @@
+/* General Footer Styling */
+.foo {
+    background-color: #0F1A1A;
+}
+
+.footer {
+    background-color: #000108;
+    color: #DFE1E1;
+    padding: 30px 20px;  /* Reduced padding */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+}
+
+.fooin {
+    width: 90%;
+}
+
+/* Social Section */
+.social-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;  /* Reduced padding */
+    border-bottom: 1px solid #DFE1E1;
+    margin-bottom: 15px;  /* Reduced margin */
+}
+
+.social-text {
+    font-size: 1rem;  /* Reduced font size */
+    font-weight: bold;
+    color: #DFE1E1;
+}
+
+.social-icons a {
+    color: #DFE1E1;
+    font-size: 1.6rem;  /* Reduced icon size */
+    margin: 0 10px;  /* Reduced space between icons */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f13235e9;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;  /* Reduced padding */
+    flex-wrap: wrap;
+    border-bottom: 1px solid #DFE1E1;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-col {
+    margin: 10px 0;  /* Reduced margin */
+    flex: 1;
+    min-width: 220px;
+    max-width: 250px;
+}
+
+.footer-heading {
+    font-size: 1.3rem;  /* Reduced font size */
+    margin-bottom: 12px;  /* Reduced margin */
+    text-transform: uppercase;
+    color: #DFE1E1;
+    font-weight: bold;
+}
+
+.footer-heading1 {
+    font-size: 1.3rem;  /* Reduced font size */
+    margin-bottom: 12px;  /* Reduced margin */
+    color: #f13235e9;
+    font-weight: bold;
+}
+
+.footer-link {
+    color: #DFE1E1;
+    text-decoration: none;
+    font-size: 0.95rem;  /* Reduced font size */
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #f13235e9;
+    text-decoration: underline;
+}
+
+/* Get App Section */
+.get-app-section {
+    text-align: center;
+    padding: 40px 20px;  /* Reduced padding */
+    background-color: #000108;
+    color: #DFE1E1;
+    border-bottom: 1px solid #DFE1E1;
+}
+
+.get-app-section h2 {
+    font-size: 2rem;  /* Reduced font size */
+    margin-bottom: 20px;  /* Reduced margin */
+    color: #f13235e9;
+    font-weight: bold;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;  /* Reduced gap */
+    margin-bottom: 30px;  /* Reduced margin */
+}
+
+.app-download {
+    text-align: center;
+    flex: 1;
+}
+
+.app-image {
+    width: 180px;  /* Reduced image size */
+    margin-bottom: 15px;  /* Reduced margin */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.app-image:hover {
+    transform: scale(1.05);  /* Slightly smaller hover effect */
+    opacity: 0.8;
+}
+
+.app-description {
+    font-size: 1rem;  /* Reduced font size */
+    color: #DFE1E1;
+    line-height: 1.6;
+    margin-top: 15px;  /* Reduced margin */
+    max-width: 750px;  /* Reduced width */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.app-description strong {
+    font-size: 1.3rem;  /* Reduced font size */
+    color: #f13235e9;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;  /* Reduced font size */
+    padding-top: 15px;  /* Reduced padding */
+    color: #DFE1E1;
+    border-top: 1px solid #DFE1E1;
+}
+
+.footer-bottom a {
+    color: #DFE1E1;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #f13235e9;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-buttons {
+        flex-direction: column;
+        gap: 15px;  /* Reduced gap */
+    }
+
+    .app-image {
+        width: 160px;  /* Reduced image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-buttons {
+        flex-direction: column;
+    }
+
+    .app-image {
+        width: 160px;  /* Reduced image size */
+    }
+
+    .footer-col {
+        margin-bottom: 15px;  /* Reduced margin */
+        text-align: center;
+    }
+
+    .get-app-section h2 {
+        font-size: 1.8rem;  /* Reduced font size */
+    }
+
+    .footer-heading {
+        font-size: 1.2rem;  /* Reduced font size */
+    }
+
+    .app-description {
+        font-size: 0.95rem;  /* Reduced font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 10px;  /* Reduced margin */
+        text-align: center;
+    }
+
+    .footer-heading {
+        font-size: 1rem;  /* Reduced font size */
+    }
+
+    .footer-link {
+        font-size: 0.85rem;  /* Reduced font size */
+    }
+
+    .app-buttons {
+        gap: 10px;  /* Reduced gap */
+    }
+
+    .app-image {
+        width: 140px;  /* Reduced image size */
+    }
+
+    .get-app-section h2 {
+        font-size: 1.5rem;  /* Reduced font size */
+    }
+
+    .app-description {
+        font-size: 0.85rem;  /* Reduced font size */
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    .app-description {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;  /* Reduced line clamp */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer-col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-heading {
+        font-size: 0.9rem;  /* Reduced font size */
+    }
+
+    .footer-link {
+        font-size: 0.75rem;  /* Reduced font size */
+    }
+
+    .app-buttons {
+        gap: 8px;  /* Reduced gap */
+    }
+
+    .app-image {
+        width: 130px;  /* Reduced image size */
+    }
+
+    .get-app-section h2 {
+        font-size: 1.3rem;  /* Reduced font size */
+    }
+
+    .app-description {
+        font-size: 0.75rem;  /* Reduced font size */
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    .app-description {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;  /* Reduced line clamp */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

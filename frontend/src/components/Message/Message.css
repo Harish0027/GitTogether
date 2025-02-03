@@ -1,0 +1,56 @@
+/* Message Wrapper for Alignment */
+.message-wrapper {
+    display: flex;
+    width: 100%;
+    margin: 8px 0;
+  }
+  
+  /* Right-aligned Messages (Logged-in User) */
+  .message-wrapper.right {
+    justify-content: flex-end;
+  }
+  
+  /* Left-aligned Messages (Other Users) */
+  .message-wrapper.left {
+    justify-content: flex-start;
+  }
+  
+  /* Message Container */
+  .message-container {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 1rem;
+    word-wrap: break-word;
+    line-height: 1.5;
+  }
+  
+  /* Sent Messages (Right Side) */
+  .message-container.sent {
+    background: linear-gradient(135deg, #4A8ACD, #5D9CEC);
+    color: #fff;
+    text-align: right;
+    border-top-right-radius: 0;
+  }
+  
+  /* Received Messages (Left Side) */
+  .message-container.received {
+    background: #333;
+    color: #E1E1E1;
+    text-align: left;
+    border-top-left-radius: 0;
+  }
+  
+  /* Message Metadata */
+  .message-sender {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .message-content {
+    display: inline-block;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  

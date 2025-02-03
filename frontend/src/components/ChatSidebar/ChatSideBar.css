@@ -1,0 +1,150 @@
+/* Sidebar Container */
+.sidebar {
+    width: 400px;
+    min-height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    transition: width 0.3s ease;
+  }
+  
+  /* Sidebar Header */
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(135deg, #f64c14, #f13235, #fa2360);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  /* Profile Picture */
+  .sidebar-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-right: 15px;
+  }
+  
+  /* Profile Name */
+  .sidebar-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    margin-right: 15px;
+  }
+  
+  /* Create Group Section */
+  .create-group-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .create-group-button {
+    background: transparent;
+    color: white;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .create-group-section .fa-plus {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Navigation Links */
+.sidebar-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    border-bottom: 2px solid #f13235;  /* Add this line for the underline */
+}
+
+.sidebar-link {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    color: #f13235;
+}
+
+.sidebar-link.active {
+    border-bottom: 2px solid #f13235;
+}
+
+  
+  /* Sidebar Info Section */
+  .sidebar-info {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px;
+    max-height: calc(100vh - 220px); 
+    overflow-y: auto;
+  }
+  
+  /* Scrollbar Styles */
+  .sidebar-info::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .sidebar-info::-webkit-scrollbar-thumb {
+    background: #f13235;
+    border-radius: 5px;
+  }
+  
+  .sidebar-info::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Logout Section */
+  .logout-section {
+    margin-top: auto;
+    width: 100%;
+    background: linear-gradient(135deg, #f64c14, #f13235, #fa2360);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logout-button {
+    background: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #f13235;
+    transform: scale(1.05);
+  }
+  

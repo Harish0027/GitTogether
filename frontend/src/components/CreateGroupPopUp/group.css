@@ -1,0 +1,159 @@
+/* Create Group Popup Overlay */
+.create-group-popUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Create Group Container */
+.create-group-container {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 8px;
+  width: min(90%, 400px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup Title */
+.create-group-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Close Button */
+.create-group-title span {
+  cursor: pointer;
+  font-size: 22px;
+  color: #f13235;
+}
+
+/* Inputs Container */
+.create-group-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+/* Input Styles */
+.create-group-inputs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+.create-group-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #f13235;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.create-group-container button:hover {
+  background: #d12b2b;
+}
+
+/* Suggestions List */
+.suggestions-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  background: white;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 1001;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Suggestion List Items */
+.suggestions-list li {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  background: white;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s, color 0.2s;
+}
+
+.suggestions-list li:hover {
+  background: #f13235;
+  color: white;
+  font-weight: bold;
+}
+
+/* Users List Row */
+.users-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+.users-list li {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  background: #ffefef;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.users-list li span {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #d12b2b;
+  cursor: pointer;
+}
+
+/* Hide Scrollbar */
+.users-list::-webkit-scrollbar,
+.suggestions-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

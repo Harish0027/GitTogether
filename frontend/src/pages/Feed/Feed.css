@@ -1,0 +1,12 @@
+.feed-page {
+    display: flex;
+    height: 100vh;
+    background-color: #0f0f0f;
+  }
+  .feed-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

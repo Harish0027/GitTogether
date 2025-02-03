@@ -1,0 +1,112 @@
+.myFeeds-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 20px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+}
+
+.myFeeds-profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #f2f2f2;
+}
+
+.profile-card-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.profile-card-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.profile-card-age {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+  margin-left: 10px;
+}
+
+.profile-card-badge {
+  font-size: 1.25rem;
+  color: #4caf50;
+  margin-left: 5px;
+}
+
+.profile-card-tags {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 5px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.profile-card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-top: 1px solid #f2f2f2;
+}
+
+.profile-card-actions .btn {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card-actions .btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.profile-card-actions .btn:focus {
+  outline: none;
+}
+
+.profile-card-actions .btn.rewind {
+  color: #888;
+}
+
+.profile-card-actions .btn.nope {
+  color: #f44336;
+}
+
+.profile-card-actions .btn.like {
+  color: #4caf50;
+}
+
+.profile-card-actions .btn.super-like {
+  color: #ff9800;
+}
